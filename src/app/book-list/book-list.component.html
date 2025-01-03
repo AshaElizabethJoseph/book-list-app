@@ -1,1 +1,24 @@
 <h1>Book List</h1>
+
+<div>
+    <h2>Databinding using a property</h2>
+    <p>Book Title : {{bookTitle}}</p>
+</div>
+
+<div>
+    <h2>Databinding from an object</h2>
+    <p> Id : {{book.id}}</p>
+    <p> Title : {{book.title}}</p>
+    <p> Author : {{book.author}}</p>   
+</div>
+
+<div>
+    <h2>Databinding from an array</h2>
+    <ul>
+        <li *ngFor="let book of books">
+            <p> Id : {{book.id}}</p>
+            <p> Title : {{book.title}}</p>
+            <p> Author : {{book.author}}</p>
+        </li>
+    </ul>
+</div>
